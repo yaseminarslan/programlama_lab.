@@ -233,3 +233,19 @@ else:
     middle_2=my_list_2[int(n/2)]
     median=(middle_1+middle_2)/2
     print(median)
+    
+    def my_median(my_list):
+    my_list_2=bubble_sort(my_list_1)
+    
+    #print(my_list_2)
+    n=len(my_list_2)
+    if n%2==1:
+        middle=int(n/2)
+        median=my_list_2[middle]
+    else:
+        middle_1=my_list_2[int(n/2)-1]
+        middle_2=my_list_2[int(n/2)]
+        median=(middle_1+middle_2)/2
+    return median
+
+print (my_median(my_list_1))
